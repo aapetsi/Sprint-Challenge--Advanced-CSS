@@ -160,6 +160,33 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-header {
+  background: #ededee;
+}
+.nav-header .nav {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-header .nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.nav-header .nav .nav-links {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #5E6164;
+}
+.nav-header .nav h1 {
+  font-size: 3.6rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

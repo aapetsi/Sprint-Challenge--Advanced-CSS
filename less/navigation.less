@@ -1,1 +1,32 @@
 // Navigation code here
+.nav-header {
+  background: lighten(@shuttle-gray, 55%) ;
+  .nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;  
+  
+    .nav-items {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      text-align: center;
+      // border: 3px solid green;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+  
+    .nav-links {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: @main-font-color;
+    }
+  
+    h1 {
+      font-size: 3.6rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
