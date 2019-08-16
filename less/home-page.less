@@ -6,6 +6,10 @@
 
     img {
       border-radius: 10px;
+
+      @media @mobileDeviceView {
+        width: 100%;
+      }
     }
 
     h2 {
@@ -15,13 +19,32 @@
     p {
       padding:0 15px;
     }
-  
   }
+
+  
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    .blast {
+      @media @mobileDeviceView {
+        width: 100%;
+      }
+    }
+
+    .sky {
+      @media @mobileDeviceView {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @mobileDeviceView {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -50,8 +73,17 @@
     display: flex;
     justify-content: center;
 
+    @media @mobileDeviceView {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobileDeviceView {
+        width: 100%;
+      }
 
       .btn {
         font-size: rem;
@@ -68,9 +100,15 @@
       .btn {
         .buttonStyling(@sea-shell, @btn-bg-color);
 
+        @media @mobileDeviceView {
+          width: 100%
+        }
+
         &:hover {
           color: red;
           .buttonStyling(@btn-bg-color, @sea-shell);
+
+          
         }
       }
     }
@@ -78,6 +116,10 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobileDeviceView {
+        width: 100%;
+      }
       
       img {
         width: 100%;
