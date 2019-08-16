@@ -160,6 +160,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
 .nav-header {
   background: #ededee;
 }
