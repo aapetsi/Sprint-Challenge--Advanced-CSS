@@ -81,6 +81,13 @@
     .walk-text {
       width: 50%;
 
+      .form-control {
+        width: 100%;
+        height: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
       @media @mobileDeviceView {
         width: 100%;
       }
@@ -105,10 +112,8 @@
         }
 
         &:hover {
-          color: red;
-          .buttonStyling(@btn-bg-color, @sea-shell);
-
-          
+          cursor: pointer;
+          .buttonStyling(@btn-bg-color, @sea-shell);          
         }
       }
     }
