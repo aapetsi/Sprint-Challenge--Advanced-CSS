@@ -66,14 +66,12 @@
       }
 
       .btn {
-        font-size: 1.8rem;
-        color: @sea-shell;
-        background: @btn-bg-color;
-        width: 40%; 
-        height: 40px;
-        text-align: center;
-        border-radius: 10px;
-        padding-top: 10px;
+        .buttonStyling(@sea-shell, @btn-bg-color);
+
+        &:hover {
+          color: red;
+          .buttonStyling(@btn-bg-color, @sea-shell);
+        }
       }
     }
 
