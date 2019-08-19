@@ -1,1 +1,33 @@
 // Navigation code here
+.nav-header {
+  background: lighten(@shuttle-gray, 55%);
+  
+  .nav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background: lighten(@shuttle-gray, 55%);
+  
+    .nav-items {
+      .navigationStyling();
+    }
+  
+    .nav-links {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: @main-font-color;
+    }
+  
+    h1 {
+      font-size: 3.6rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+  }
+}

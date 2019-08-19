@@ -4,6 +4,15 @@
 
   .intro {
 
+    img {
+      border-radius: 10px;
+      margin-top: 90px;
+
+      @media @mobileDeviceView {
+        width: 100%;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -11,13 +20,32 @@
     p {
       padding:0 15px;
     }
-  
   }
+
+  
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    .blast {
+      @media @mobileDeviceView {
+        width: 100%;
+      }
+    }
+
+    .sky {
+      @media @mobileDeviceView {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @mobileDeviceView {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +74,28 @@
     display: flex;
     justify-content: center;
 
+    @media @mobileDeviceView {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
+
+      .form-control {
+        width: 100%;
+        height: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      @media @mobileDeviceView {
+        width: 100%;
+      }
+
+      .btn {
+        font-size: rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +106,26 @@
       }
 
       .btn {
+        .buttonStyling(@sea-shell, @btn-bg-color);
+
+        @media @mobileDeviceView {
+          width: 100%
+        }
+
+        &:hover {
+          cursor: pointer;
+          .buttonStyling(@btn-bg-color, @sea-shell);          
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobileDeviceView {
+        width: 100%;
+      }
       
       img {
         width: 100%;

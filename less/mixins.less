@@ -1,1 +1,21 @@
 // Mixins Here
+
+.navigationStyling() {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.buttonStyling(@font-color; @bg-color) {
+  font-size: 1.8rem;
+  color: @font-color;
+  background: @bg-color;
+  width: 40%; 
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 10px;
+}
